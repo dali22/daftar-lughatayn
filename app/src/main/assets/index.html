@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="ar"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دفتر لغتين</title>
+<style>
+html{-webkit-text-size-adjust:100%}body{margin:0}[hidden]{display:none!important}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-arabic-500-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-arabic-700-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/ibm-plex-sans-arabic-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Reem Kufi";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/reem-kufi-arabic-600-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:"Reem Kufi";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/reem-kufi-arabic-700-normal.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+@font-face{font-family:"Newsreader";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/newsreader-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Newsreader";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/newsreader-latin-400-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Newsreader";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/newsreader-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* Layout: one-column phone notebook; bottom tab bar; each language carries its own ink color (EN copper, FR indigo). */
+:root{
+  --paper:#f3f4f7; --card:#ffffff; --ink:#1a2030; --muted:#5a6376; --line:#dde1ea; --soft:#eceef4;
+  --en:#b9531f; --en-soft:#f8e9e0; --fr:#3445a6; --fr-soft:#e6e9f8; --ok:#2b7a4b; --ok-soft:#e1f1e7; --warn:#a1670a;
+  --f-ar:"IBM Plex Sans Arabic",system-ui,"Segoe UI",Tahoma,sans-serif;
+  --f-disp:"Reem Kufi","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --f-lat:"Newsreader",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#11141b; --card:#191e28; --ink:#e7eaf1; --muted:#9aa3b5; --line:#2a3141; --soft:#202634;
+  --en:#f08a52; --en-soft:#3a2519; --fr:#95a3f6; --fr-soft:#232a4a; --ok:#5fc88d; --ok-soft:#1a3326; --warn:#e2a64a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#11141b; --card:#191e28; --ink:#e7eaf1; --muted:#9aa3b5; --line:#2a3141; --soft:#202634;
+  --en:#f08a52; --en-soft:#3a2519; --fr:#95a3f6; --fr-soft:#232a4a; --ok:#5fc88d; --ok-soft:#1a3326; --warn:#e2a64a; color-scheme:dark}
+html,body{height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-ar);font-size:16px;line-height:1.6}
+*{box-sizing:border-box}
+button,input,select,textarea{font:inherit;color:inherit}
+.app{max-width:560px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 110px;display:flex;flex-direction:column;gap:18px}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1{font-family:var(--f-disp);font-size:1.7rem;line-height:1.25}
+h2{font-family:var(--f-disp);font-size:1.25rem}
+h3{font-size:1rem;font-weight:600}
+p{margin:0}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.lat{font-family:var(--f-lat);direction:ltr;unicode-bidi:isolate}
+.num{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:.78rem;color:var(--muted);letter-spacing:.02em;font-weight:500}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.between{justify-content:space-between}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:.75rem;font-weight:600;padding:2px 9px;border-radius:99px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.chip.en{color:var(--en);background:var(--en-soft);border-color:transparent}
+.chip.fr{color:var(--fr);background:var(--fr-soft);border-color:transparent}
+.chip.all{color:var(--ok);background:var(--ok-soft);border-color:transparent}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:9px 14px;cursor:pointer;font-weight:500;min-height:42px}
+.btn:hover{background:var(--soft)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.en{background:var(--en);color:#fff;border-color:var(--en)}
+.btn.fr{background:var(--fr);color:#fff;border-color:var(--fr)}
+.btn.ghost{background:transparent}
+.btn.sm{min-height:34px;padding:5px 11px;font-size:.88rem}
+.btn:disabled{opacity:.45;cursor:default}
+:focus-visible{outline:2px solid var(--fr);outline-offset:2px}
+a{color:var(--fr)}
+input[type=text],input[type=date],textarea,select{width:100%;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+textarea{min-height:70px;resize:vertical}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:.88rem;color:var(--muted)}
+
+/* header */
+.hero{display:flex;flex-direction:column;gap:10px}
+.track{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;direction:rtl}
+.track span{height:8px;border-radius:3px;background:var(--line)}
+.track span.p0{background:color-mix(in srgb,var(--en) 35%,var(--line))}
+.track span.done{background:var(--ink)}
+.track span.now{background:var(--en);box-shadow:0 0 0 2px var(--card),0 0 0 3px var(--en)}
+.sync{font-size:.75rem;color:var(--muted)}
+
+/* tasks */
+.tasks{display:flex;flex-direction:column;gap:10px}
+.task{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.task.done{background:color-mix(in srgb,var(--ok-soft) 55%,var(--card))}
+.task-head{display:flex;gap:12px;align-items:flex-start;padding:14px}
+.check{flex:none;width:30px;height:30px;border-radius:50%;border:2px solid var(--line);background:transparent;cursor:pointer;display:grid;place-items:center;margin-top:1px}
+.task.done .check{background:var(--ok);border-color:var(--ok)}
+.check svg{width:16px;height:16px;stroke:#fff;opacity:0}
+.task.done .check svg{opacity:1}
+.task-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px;cursor:pointer;background:none;border:0;text-align:right;padding:0}
+.task.done .task-title{text-decoration:line-through;text-decoration-color:var(--muted)}
+.task-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.task-body{padding:0 14px 14px 14px;display:flex;flex-direction:column;gap:12px;border-top:1px dashed var(--line);padding-top:12px;margin-inline:0}
+.timer{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.clock{font-family:var(--f-lat);font-size:1.6rem;font-variant-numeric:tabular-nums;direction:ltr;min-width:4.2ch}
+.links{display:flex;flex-direction:column;gap:6px}
+.links a{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:9px;background:var(--soft);text-decoration:none;color:var(--ink)}
+
+/* tabs */
+.tabbar{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:max(8px,env(safe-area-inset-left,0px));padding-right:max(8px,env(safe-area-inset-right,0px));z-index:5}
+.tabbar nav{max-width:560px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.tabbar a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 4px 10px;text-decoration:none;color:var(--muted);font-size:.78rem;font-weight:500}
+.tabbar a svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tabbar a[aria-current=page]{color:var(--ink)}
+.tabbar a[aria-current=page] svg{stroke:var(--en)}
+
+/* flashcard */
+.seg{display:flex;background:var(--soft);border-radius:11px;padding:3px;gap:3px}
+.seg button{flex:1;border:0;background:transparent;border-radius:8px;padding:8px 6px;cursor:pointer;font-weight:500;color:var(--muted);min-height:38px}
+.seg button[aria-pressed=true]{background:var(--card);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.fcard{border:1px solid var(--line);border-radius:16px;padding:26px 18px;min-height:200px;display:flex;flex-direction:column;gap:14px;justify-content:center;align-items:center;text-align:center;background:var(--card);position:relative}
+.fcard.en{border-top:4px solid var(--en)}
+.fcard.fr{border-top:4px solid var(--fr)}
+.fcard .q{font-size:1.35rem;font-weight:500}
+.fcard .q.lat{font-size:1.55rem}
+.fcard .a{font-size:1.15rem;padding-top:12px;border-top:1px solid var(--line);width:100%}
+.fcard .a.lat{font-size:1.45rem}
+.boxes{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;text-align:center}
+.boxes div{background:var(--soft);border-radius:9px;padding:6px 2px}
+.boxes b{display:block;font-size:1.05rem;font-variant-numeric:tabular-nums}
+
+/* progress */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.stat b{display:block;font-family:var(--f-lat);font-size:1.9rem;font-weight:500;line-height:1.1;font-variant-numeric:tabular-nums}
+.grid84{display:grid;grid-template-columns:auto repeat(7,1fr);gap:4px;align-items:center}
+.grid84 .c{aspect-ratio:1;border-radius:4px;background:var(--soft);max-width:100%}
+.grid84 .c.f1{background:color-mix(in srgb,var(--ok) 30%,var(--soft))}
+.grid84 .c.f2{background:color-mix(in srgb,var(--ok) 60%,var(--soft))}
+.grid84 .c.f3{background:var(--ok)}
+.grid84 .c.today{outline:2px solid var(--en);outline-offset:1px}
+.grid84 .wk{font-size:.7rem;color:var(--muted);padding-inline-end:4px;font-variant-numeric:tabular-nums}
+.list{display:flex;flex-direction:column;gap:8px}
+.item{border:1px solid var(--line);border-radius:11px;padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.item .wrong{text-decoration:line-through;color:var(--muted)}
+.phase{border-inline-start:3px solid var(--line);padding-inline-start:12px;display:flex;flex-direction:column;gap:6px}
+.phase.now{border-color:var(--en)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+td,th{padding:7px 6px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:.8rem}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:12px;font-size:.92rem;z-index:9;max-width:calc(100% - 32px);text-align:center}
+.copybox{font-family:var(--f-lat);direction:ltr;text-align:left;font-size:.85rem;min-height:120px}
+@media (prefers-reduced-motion:no-preference){.task,.check,.fcard{transition:background .2s,border-color .2s}}
+</style></head><body>
+
+<div class="app" id="app" dir="rtl" lang="ar"></div>
+<div class="tabbar" dir="rtl"><nav id="tabs">
+  <a href="#today" data-v="today"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"/></svg>اليوم</a>
+  <a href="#practice" data-v="practice"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="14" height="12" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v10"/></svg>تدريب</a>
+  <a href="#plan" data-v="plan"><svg viewBox="0 0 24 24"><path d="M5 4h14M5 9h14M5 14h9M5 19h6"/></svg>البرنامج</a>
+  <a href="#progress" data-v="progress"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>تقدّمي</a>
+</nav></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+/* ---------- content ---------- */
+const PROMPT_EN=`Be my English conversation partner. My English level is beginner. My native language is Arabic and I speak French well.
+
+Rules:
+- Use short, simple sentences and common words.
+- Ask me one question at a time. Topic: my day, my work as a content creator, or football (or let me choose).
+- Do not correct me during the conversation. After every 4 of my messages, list my mistakes like this: what I wrote -> correct version -> a one-line explanation in Arabic.
+- If I use a French or Arabic word, give me the English word and continue.
+- Keep a running list of my recurring mistakes and show it when I write "summary".
+
+Start by asking me which topic I want.`;
+const PROMPT_FR=`Be my French conversation partner. My French is advanced: I use it at work, but I hesitate when speaking and I repeat some mistakes.
+
+Rules:
+- Speak only in French, at a natural pace, with a natural register.
+- Ask open questions that need long answers (opinions, stories, explanations). Push back on my arguments.
+- Do not correct me during the conversation. After every 4 of my messages, list: my grammar mistakes, phrasings that are correct but not natural (with a more natural version), and one more precise word or connector I could have used. Explanations in French.
+- Keep a running list of my recurring errors and show it when I write "bilan".
+
+Start by proposing three topics.`;
+
+const LINKS={
+  enBeg:[["BBC Learning English","https://www.bbc.co.uk/learningenglish/"],["Easy English (مقابلات في الشارع، يوتيوب)","https://www.youtube.com/results?search_query=Easy+English+street+interviews"]],
+  enField:[["Football tactics explained","https://www.youtube.com/results?search_query=football+tactics+explained"],["Digital marketing basics","https://www.youtube.com/results?search_query=digital+marketing+basics+explained"]],
+  frShadow:[["RFI · Français facile","https://francaisfacile.rfi.fr/"],["InnerFrench (بودكاست)","https://innerfrench.com/"]]
+};
+
+const EN_TASKS=[
+ [ {k:"cards",t:"مراجعة البطاقات",m:10,how:"راجع البطاقات المستحقّة في «تدريب». قل الجملة الإنجليزية بصوت عالٍ قبل أن تكشف الإجابة، ثم استمع لنطقها.",act:[{type:"deck",lang:"en"}]},
+   {k:"listen",t:"استماع للمبتدئين",m:10,how:"مقطع قصير للمبتدئين، مع ترجمة إنجليزية لا عربية. اكتب كلمتين أو ثلاثاً جديدة وأضفها كبطاقات.",act:[{type:"links",items:LINKS.enBeg}]},
+   {k:"speak",t:"قل 5 جمل عن يومك",m:5,how:"بصوت عالٍ، جمل بسيطة. الخطأ مقبول، المهمّ أن تتكلّم. استعمل الموضوع المقترح إن أردت.",act:[{type:"speak",lang:"en"}]} ],
+ [ {k:"cards",t:"مراجعة البطاقات",m:8,how:"راجع المستحقّ، وأضف جملاً سمعتها في المقاطع هذا الأسبوع.",act:[{type:"deck",lang:"en"}]},
+   {k:"shadow",t:"Shadowing",m:7,how:"اختر مقطعاً مدّته دقيقة. استمع مرة كاملة، ثم ردّد مع المتحدّث جملة بجملة 4 أو 5 مرات، بنفس الإيقاع والنبرة.",act:[{type:"links",items:LINKS.enBeg}]},
+   {k:"conv",t:"محادثة مع Claude",m:10,how:"انسخ التعليمات، افتح محادثة جديدة مع Claude والصقها. التصحيح يأتي كل 4 رسائل.",act:[{type:"prompt",lang:"en"},{type:"mistake",lang:"en"}]} ],
+ [ {k:"cards",t:"مراجعة البطاقات",m:5,how:"المستحقّ فقط. البطاقات الآن للصيانة.",act:[{type:"deck",lang:"en"}]},
+   {k:"field",t:"استماع في مجالك",m:8,how:"كرة القدم أو التسويق الرقمي. لا تفهم كل كلمة؟ طبيعي. اكتفِ بالفكرة العامة.",act:[{type:"links",items:LINKS.enField}]},
+   {k:"voice",t:"محادثة صوتية حرّة",m:12,how:"نفس التعليمات، لكن في الوضع الصوتي في تطبيق Claude: الهدف هو الكلام لا الكتابة.",act:[{type:"prompt",lang:"en"},{type:"mistake",lang:"en"}]} ]
+];
+const FR_TASKS={
+ shadow:{k:"shadow",t:"Shadowing بالفرنسية",m:15,how:"مقطع من 1 إلى 2 دقيقة. ردّد مع المتحدّث، ثم أعد المقطع بدون صوت الأصل وقارن.",act:[{type:"links",items:LINKS.frShadow}]},
+ record:{k:"record",t:"سجّل نفسك 3 دقائق",m:15,how:"سجّل بمسجّل الهاتف دون توقّف. استمع: أين تردّدت؟ أين لجأت إلى العربية؟ دوّن الخطأ المتكرّر في السجلّ.",act:[{type:"speak",lang:"fr"},{type:"mistake",lang:"fr"}]},
+ conv:{k:"conv",t:"محادثة بالفرنسية مع Claude",m:15,how:"انسخ التعليمات والصقها في محادثة جديدة. ركّز على الأخطاء المتكرّرة لا كل خطأ.",act:[{type:"prompt",lang:"fr"},{type:"mistake",lang:"fr"}]}
+};
+const FR_BY_DAY={1:"shadow",2:"record",3:"conv",4:"shadow",5:"record",6:"conv"};
+const PHASES=[
+ {name:"الأساس",weeks:"1–4",goal:"أن تقدّم نفسك وعملك بجمل بسيطة دون تحضير."},
+ {name:"الجمل المترابطة",weeks:"5–8",goal:"أن تصف حدثاً أو مباراة أو مشروعاً في دقيقة متواصلة."},
+ {name:"المحادثة",weeks:"9–12",goal:"محادثة من 10 دقائق في موضوع مألوف، ولو بأخطاء."}
+];
+const DAYNAMES=["الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"];
+
+const DECK_EN=[["Nice to meet you.","تشرّفت بمعرفتك."],["Where are you from?","من أين أنت؟"],["I'm from Tunisia.","أنا من تونس."],["What do you do?","ماذا تعمل؟"],["I work as a content creator.","أعمل صانع محتوى."],["I make videos for social media.","أصنع فيديوهات لمواقع التواصل."],["Could you say that again, please?","هل يمكنك إعادة ذلك من فضلك؟"],["Could you speak more slowly?","هل يمكنك التحدّث ببطء أكثر؟"],["What does this word mean?","ماذا تعني هذه الكلمة؟"],["How do you say this in English?","كيف تقول هذا بالإنجليزية؟"],["I don't understand.","لا أفهم."],["I'm still learning English.","ما زلت أتعلّم الإنجليزية."],["I think that…","أعتقد أنّ…"],["In my opinion, …","في رأيي…"],["I agree with you.","أتّفق معك."],["I'm not sure.","لست متأكّداً."],["That's a good idea.","هذه فكرة جيّدة."],["What time is it?","كم الساعة؟"],["I'm busy right now.","أنا مشغول الآن."],["Can we talk later?","هل يمكننا التحدّث لاحقاً؟"],["I'll send you an email.","سأرسل لك بريداً إلكترونياً."],["Let me check and get back to you.","دعني أتحقّق وأعود إليك."],["When is the deadline?","متى الموعد النهائي؟"],["I finished the video yesterday.","أنهيت الفيديو أمس."],["I'm working on a new project.","أعمل على مشروع جديد."],["It takes about two hours.","يستغرق ذلك حوالي ساعتين."],["I usually wake up at seven.","عادةً أستيقظ في السابعة."],["On weekends, I watch football.","في عطلة الأسبوع أشاهد كرة القدم."],["Which team do you support?","أيّ فريق تشجّع؟"],["The match was amazing.","كانت المباراة رائعة."],["They won two–one.","فازوا بهدفين لهدف."],["I'd like a coffee, please.","أريد قهوة من فضلك."],["How much is it?","بكم هذا؟"],["Excuse me, where is the station?","عفواً، أين المحطة؟"],["I'm looking for…","أبحث عن…"],["Can you help me?","هل يمكنك مساعدتي؟"],["Thank you for your help.","شكراً على مساعدتك."],["No problem.","لا مشكلة."],["Sorry, I'm late.","آسف، تأخّرت."],["What do you mean?","ماذا تقصد؟"],["Let me think.","دعني أفكّر."],["It depends.","هذا يعتمد."],["For example, …","على سبيل المثال…"],["First…, then…, finally…","أولاً… ثمّ… وأخيراً…"],["because…","لأنّ…"],["I have been working here since 2023.","أعمل هنا منذ 2023."],["I'm studying digital marketing.","أدرس التسويق الرقمي."],["See you tomorrow!","أراك غداً!"]];
+const DECK_FR=[["En ce qui me concerne, …","بالنسبة لي…"],["Il n'en demeure pas moins que…","يبقى مع ذلك أنّ…"],["Force est de constater que…","لا بدّ من الإقرار بأنّ…"],["Quitte à …","حتى لو اقتضى الأمر…"],["Faire le point sur…","مراجعة الوضع بشأن…"],["Mettre l'accent sur…","التركيز على…"],["Être à la hauteur","أن يكون في المستوى المطلوب"],["Avoir du mal à + infinitif","أن يجد صعوبة في…"],["Je ne m'attendais pas à ce que + subjonctif","لم أكن أتوقّع أن…"],["Bien que + subjonctif","مع أنّ…"],["À condition que + subjonctif","بشرط أن…"],["D'autant plus que…","لا سيّما أنّ…"],["Il s'agit de…","يتعلّق الأمر بـ…"],["Tenir compte de…","أخذ … بعين الاعتبار"],["Se rendre compte que…","أن يدرك أنّ…"],["Revenir sur une décision","التراجع عن قرار"],["Prendre du recul","أن يأخذ مسافة للتأمّل"],["Ça vaut le coup.","يستحقّ العناء."],["Autrement dit, …","بعبارة أخرى…"],["En revanche, …","في المقابل…"],["Par ailleurs, …","من جهة أخرى…"],["Néanmoins, …","ومع ذلك…"],["Quant à …","أمّا بخصوص…"],["Je tiens à préciser que…","أحرص على التوضيح أنّ…"],["Ne pas être en mesure de…","ألّا يكون قادراً على…"],["Il faudrait que + subjonctif","ينبغي أن…"],["Au fur et à mesure","تدريجياً مع التقدّم"],["Dans la mesure où…","بما أنّ… / بقدر ما…"],["Avoir l'habitude de…","أن يعتاد على…"],["Je vous en prie.","العفو / تفضّل."]];
+const TOPICS={
+ en:[["Introduce yourself in 5 sentences.","قدّم نفسك في 5 جمل"],["Describe your typical workday.","صف يوم عملك المعتاد"],["What did you do yesterday?","ماذا فعلت أمس؟"],["Describe your favorite football team.","صف فريقك المفضّل"],["Talk about your city.","تحدّث عن مدينتك"],["What is your favorite food, and why?","ما أكلتك المفضّلة ولماذا؟"],["Describe a video you made recently.","صف فيديو صنعته مؤخراً"],["What are your plans for this weekend?","ما خططك لعطلة الأسبوع؟"],["Which apps do you use most, and why?","أيّ تطبيقات تستعمل أكثر ولماذا؟"],["Talk about a book you like.","تحدّث عن كتاب تحبّه"],["What do you like about your job?","ماذا تحبّ في عملك؟"],["Describe the last match you watched.","صف آخر مباراة شاهدتها"],["What do you want to learn this year?","ماذا تريد أن تتعلّم هذا العام؟"],["Describe your family.","صف عائلتك"],["Explain how you make a short video, step by step.","اشرح خطوات صنع فيديو قصير"],["What makes a good social media post?","ما الذي يجعل منشوراً ناجحاً؟"]],
+ fr:[["Présentez votre parcours professionnel.","قدّم مسارك المهني"],["Les réseaux sociaux informent-ils ou désinforment-ils ?","هل تُعلم الشبكات الاجتماعية أم تضلّل؟"],["Racontez un projet qui ne s'est pas passé comme prévu.","احكِ عن مشروع لم يسر كما خُطّط له"],["L'IA va-t-elle remplacer les créateurs de contenu ?","هل سيعوّض الذكاء الاصطناعي صنّاع المحتوى؟"],["Expliquez une stratégie de marketing digital à un débutant.","اشرح استراتيجية تسويق رقمي لمبتدئ"],["Commentez un match récent comme un analyste.","علّق على مباراة كمحلّل"],["Quel livre a changé votre façon de penser ?","أيّ كتاب غيّر طريقة تفكيرك؟"],["Défendez une opinion impopulaire.","دافع عن رأي غير شائع"],["Comment mesurer le succès d'une vidéo ?","كيف تقيس نجاح فيديو؟"],["Décrivez votre manière d'écrire un roman.","صف طريقتك في كتابة رواية"],["Le football est-il plus qu'un sport ?","هل كرة القدم أكثر من رياضة؟"],["Quels conseils donneriez-vous à un jeune créateur ?","ما نصيحتك لصانع محتوى مبتدئ؟"],["Faut-il limiter le temps d'écran des enfants ?","هل يجب تقييد وقت الشاشة للأطفال؟"],["Racontez un souvenir d'enfance en détail.","احكِ ذكرى طفولة بالتفصيل"],["Que feriez-vous avec un an de liberté totale ?","ماذا تفعل بسنة حرّية كاملة؟"],["Le travail à distance : progrès ou piège ?","العمل عن بعد: تقدّم أم فخّ؟"]]
+};
+const INTERVALS=[0,1,3,7,14,30]; // days per Leitner box 1..5
+
+/* ---------- state & storage ---------- */
+const LS="lughatayn.v1";
+const pad=n=>String(n).padStart(2,"0");
+const keyOf=d=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+const parseKey=k=>{const[a,b,c]=k.split("-").map(Number);return new Date(a,b-1,c)};
+const addDays=(k,n)=>{const d=parseKey(k);d.setDate(d.getDate()+n);return keyOf(d)};
+const diffDays=(a,b)=>Math.round((parseKey(b)-parseKey(a))/864e5);
+const todayKey=()=>keyOf(new Date());
+function fresh(){return{v:1,start:todayKey(),days:{},cards:{},custom:[],mistakes:[],reviews:[],updated:0}}
+let S=fresh();
+try{const raw=localStorage.getItem(LS);if(raw)S=Object.assign(fresh(),JSON.parse(raw))}catch(e){}
+let dbRef=null, syncState="local", saveT=null;
+function save(){
+  S.updated=Date.now();
+  try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){}
+  if(dbRef){clearTimeout(saveT);saveT=setTimeout(()=>{dbRef.set(JSON.parse(JSON.stringify(S))).then(()=>{syncState="cloud";paintSync()}).catch(()=>{syncState="error";paintSync()})},700)}
+}
+async function connectDb(){
+  try{
+    const db=await window.claude?.use?.("db"); const user=await window.claude?.use?.("user");
+    if(!db||!user)return;
+    const id=await user.id(); if(!id)return;
+    dbRef=db.collection("data/users/"+id).doc("progress");
+    const snap=await dbRef.get();
+    if(snap.exists){const r=snap.data()||{};if((r.updated||0)>(S.updated||0)){S=Object.assign(fresh(),JSON.parse(JSON.stringify(r)));try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){};render()}}
+    else if(S.updated){await dbRef.set(JSON.parse(JSON.stringify(S)))}
+    syncState="cloud";paintSync();
+  }catch(e){}
+}
+function paintSync(){const el=document.getElementById("sync");if(el)el.textContent="● محفوظ على هذا الهاتف. استعمل النسخ الاحتياطي قبل حذف التطبيق أو تغيير الهاتف."}
+
+/* ---------- program logic ---------- */
+function dayIndex(k){return diffDays(S.start,k)+1}
+function tasksFor(k){
+  const di=dayIndex(k); if(di<1||di>84)return[];
+  const week=Math.ceil(di/7), ph=week<=4?0:week<=8?1:2, wd=parseKey(k).getDay();
+  const out=[];
+  if(di===1)out.push({id:"base",lang:"all",t:"تسجيل نقطة الانطلاق",m:5,how:"سجّل دقيقتين بالإنجليزية ودقيقتين بالفرنسية: عرّف بنفسك وبعملك. احتفظ بالتسجيلين في هاتفك. ستعيد نفس التمرين في اليوم 84 وتقارن.",act:[]});
+  if(di===84)out.push({id:"final",lang:"all",t:"تسجيل نهاية البرنامج",m:5,how:"أعد تمرين اليوم الأول بالضبط، ثم استمع للتسجيلين القديمين والجديدين. دوّن الفرق في المراجعة.",act:[]});
+  if(wd===0){out.push({id:"review",lang:"all",t:"المراجعة الأسبوعية",m:10,how:"ثلاثة أسئلة قصيرة. أجب بصدق، فهذه الإجابات هي ما يوجّه الأسبوع القادم.",act:[{type:"review",week}]});return out}
+  EN_TASKS[ph].forEach((t,i)=>out.push(Object.assign({id:"en"+i,lang:"en"},t)));
+  out.push(Object.assign({id:"fr",lang:"fr"},FR_TASKS[FR_BY_DAY[wd]]));
+  return out;
+}
+const dayRec=k=>S.days[k]||(S.days[k]={tasks:{}});
+function frac(k){const t=tasksFor(k);if(!t.length)return null;const d=(S.days[k]||{}).tasks||{};return t.filter(x=>d[x.id]!=null).length/t.length}
+function streak(){
+  let k=todayKey(),n=0;if(frac(k)!==1)k=addDays(k,-1);
+  while(frac(k)===1){n++;k=addDays(k,-1)}return n;
+}
+function totals(){let en=0,fr=0,full=0;for(const k in S.days){const t=S.days[k].tasks||{};for(const id in t){const m=+t[id]||0;if(id.startsWith("en"))en+=m;else if(id==="fr")fr+=m;}if(frac(k)===1)full++}return{en,fr,full}}
+
+/* cards */
+function deckOf(lang){
+  const base=(lang==="en"?DECK_EN:lang==="fr"?DECK_FR:[]).map((c,i)=>({id:lang+i,lang,front:c[0],back:c[1]}));
+  return lang==="mine"?S.custom.slice():base;
+}
+function cardState(id){return S.cards[id]||{box:0,due:null}}
+function dueList(lang){const t=todayKey();return deckOf(lang).filter(c=>{const s=cardState(c.id);return s.box===0||s.due<=t})}
+function newCount(lang){return deckOf(lang).filter(c=>cardState(c.id).box===0).length}
+
+/* ---------- ui helpers ---------- */
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $=s=>document.querySelector(s);
+let toastT;function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,2400)}
+const chip=l=>l==="en"?'<span class="chip en">EN</span>':l==="fr"?'<span class="chip fr">FR</span>':'<span class="chip all">الكل</span>';
+const fmt=s=>{s=Math.max(0,Math.ceil(s));return pad(Math.floor(s/60))+":"+pad(s%60)};
+const CHECK='<svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>';
+function speak(text,lang){if(window.Android){const ok=Android.speak(text.replace(/…|\+ ?\w+/g,""),lang);if(!ok)toast(lang==="fr"?"ثبّت الصوت الفرنسي من إعدادات «تحويل النص إلى كلام» في الهاتف":"ثبّت الصوت الإنجليزي من إعدادات «تحويل النص إلى كلام» في الهاتف");return}try{const u=new SpeechSynthesisUtterance(text.replace(/…|\+ ?\w+/g,""));u.lang=lang==="fr"?"fr-FR":"en-US";u.rate=lang==="en"?.85:1;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){toast("النطق الصوتي غير متاح في هذا المتصفّح")}}
+async function copyText(txt,boxId){
+  if(window.Android){Android.copy(txt);toast(boxId==="restoreBox"?"نُسخت النسخة الاحتياطية":"نُسخت التعليمات. الصقها في محادثة جديدة مع Claude");return}
+  try{await navigator.clipboard.writeText(txt);toast("نُسخت التعليمات. الصقها في محادثة جديدة مع Claude")}
+  catch(e){const b=document.getElementById(boxId);if(b){b.hidden=false;b.focus();b.select()}toast("حدّد النص وانسخه يدوياً")}
+}
+
+/* ---------- view state ---------- */
+let view="today", open={}, timer={id:null,left:0,run:false,t:null}, wake=null;
+let P={lang:"en",card:null,revealed:false,mode:"fl2ar",topic:{en:0,fr:0},spk:{left:0,run:false,t:null,total:120}};
+let resetArm=false;
+
+/* ---------- render: today ---------- */
+function renderToday(){
+  const k=todayKey(), di=dayIndex(k);
+  if(di<1)return `<header class="hero"><span class="eyebrow">دفتر لغتين</span><h1>يبدأ البرنامج بعد ${-di+1} يوم</h1><p class="muted">تاريخ البداية ${esc(S.start)}. يمكنك تغييره من تبويب «البرنامج».</p></header>`;
+  if(di>84){const tt=totals();return `<header class="hero"><span class="eyebrow">دفتر لغتين</span><h1>انتهت الأسابيع الاثنا عشر</h1><p class="muted">أنهيت ${tt.full} يوماً كاملاً، ${tt.en} دقيقة إنجليزية و${tt.fr} دقيقة فرنسية. البطاقات والتدريب ما زالت متاحة. لبرنامج جديد، غيّر تاريخ البداية في «البرنامج».</p></header>`}
+  const week=Math.ceil(di/7), ph=week<=4?0:week<=8?1:2, wd=parseKey(k).getDay();
+  const tasks=tasksFor(k), done=dayRec(k).tasks;
+  const doneN=tasks.filter(t=>done[t.id]!=null).length, mins=tasks.reduce((a,t)=>a+t.m,0);
+  let track="";for(let w=1;w<=12;w++)track+=`<span class="${w<week?"done":w===week?"now":""}" title="الأسبوع ${w}"></span>`;
+  const dueEn=dueList("en").length;
+  return `<header class="hero">
+    <div class="row between"><span class="eyebrow">${DAYNAMES[wd]} · اليوم ${di} من 84</span><span class="sync" id="sync"></span></div>
+    <h1>الأسبوع ${week} · ${PHASES[ph].name}</h1>
+    <div class="track" aria-label="الأسبوع ${week} من 12">${track}</div>
+    <p class="muted small">الهدف: ${PHASES[ph].goal}</p>
+  </header>
+  <section class="panel" style="gap:6px">
+    <div class="row between"><h3>جلسة اليوم</h3><span class="num muted">${doneN}/${tasks.length} · ${mins} دقيقة</span></div>
+    <p class="small muted">${wd===0?"يوم المراجعة: لا مهام لغوية اليوم، فقط مراجعة الأسبوع.":`إنجليزية ${tasks.filter(t=>t.lang==="en").reduce((a,t)=>a+t.m,0)} د · فرنسية ${tasks.filter(t=>t.lang==="fr").reduce((a,t)=>a+t.m,0)} د · ${dueEn} بطاقة إنجليزية مستحقّة`}</p>
+  </section>
+  <div class="tasks">${tasks.map(t=>taskHTML(t,done[t.id]!=null)).join("")}</div>`;
+}
+function taskHTML(t,isDone){
+  const isOpen=open[t.id];
+  const tm=timer.id===t.id;
+  return `<article class="task${isDone?" done":""}">
+   <div class="task-head">
+    <button class="check" data-act="toggle" data-id="${t.id}" aria-label="${isDone?"إلغاء الإنجاز":"تمّ"}: ${esc(t.t)}" aria-pressed="${isDone}">${CHECK}</button>
+    <button class="task-main" data-act="open" data-id="${t.id}" aria-expanded="${!!isOpen}">
+      <span class="task-title"><b style="font-weight:600">${esc(t.t)}</b></span>
+      <span class="task-meta">${chip(t.lang)}<span class="small muted num">${t.m} دقيقة</span>${tm?`<span class="small num" style="color:var(--en)">⏱ ${fmt(timer.left)}</span>`:""}</span>
+    </button>
+   </div>
+   ${isOpen?`<div class="task-body">
+     <p>${esc(t.how)}</p>
+     <div class="timer"><span class="clock" id="clk-${t.id}">${fmt(tm?timer.left:t.m*60)}</span>
+       <button class="btn sm ${t.lang==="fr"?"fr":t.lang==="en"?"en":"primary"}" data-act="timer" data-id="${t.id}" data-m="${t.m}">${tm&&timer.run?"إيقاف مؤقّت":tm?"استئناف":"ابدأ المؤقّت"}</button>
+       ${tm?`<button class="btn sm ghost" data-act="tstop">إلغاء</button>`:""}</div>
+     ${(t.act||[]).map(a=>actHTML(a,t)).join("")}
+   </div>`:""}
+  </article>`;
+}
+function actHTML(a,t){
+  if(a.type==="links")return `<div class="links">${a.items.map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener"><span>${esc(n)}</span><span class="muted">↗</span></a>`).join("")}</div>`;
+  if(a.type==="deck"){const n=dueList(a.lang).length;return `<button class="btn sm" data-act="goDeck" data-lang="${a.lang}">افتح البطاقات (${n} مستحقّة)</button>`}
+  if(a.type==="speak")return `<button class="btn sm" data-act="goSpeak" data-lang="${a.lang}">موضوع للكلام + مؤقّت</button>`;
+  if(a.type==="prompt"){const id="cp-"+t.id;return `<div class="row"><button class="btn sm" data-act="copy" data-lang="${a.lang}" data-box="${id}">انسخ تعليمات Claude</button></div><textarea class="copybox" id="${id}" readonly hidden>${esc(a.lang==="fr"?PROMPT_FR:PROMPT_EN)}</textarea>`}
+  if(a.type==="mistake")return mistakeForm(a.lang,"m-"+t.id);
+  if(a.type==="review"){const r=S.reviews.find(x=>x.week===a.week)||{};return `<form class="list" data-form="review" data-week="${a.week}">
+     <label class="f">ماذا تعلّمت هذا الأسبوع؟<textarea id="rv-l-${a.week}" name="learned">${esc(r.learned)}</textarea></label>
+     <label class="f">الخطأ الذي تكرّر أكثر<textarea id="rv-m-${a.week}" name="mistake">${esc(r.mistake)}</textarea></label>
+     <label class="f">على ماذا ستركّز الأسبوع القادم؟<textarea id="rv-f-${a.week}" name="focus">${esc(r.focus)}</textarea></label>
+     <button class="btn primary" type="submit">احفظ المراجعة</button></form>`}
+  return "";
+}
+function mistakeForm(lang,id){return `<form class="list" data-form="mistake">
+   <span class="small muted">سجّل خطأً متكرّراً</span>
+   <select id="${id}-l" name="lang" aria-label="اللغة"><option value="en"${lang==="en"?" selected":""}>الإنجليزية</option><option value="fr"${lang==="fr"?" selected":""}>الفرنسية</option></select>
+   <input type="text" id="${id}-w" name="wrong" dir="ltr" placeholder="ما قلته: I am agree" aria-label="الخطأ">
+   <input type="text" id="${id}-r" name="right" dir="ltr" placeholder="الصحيح: I agree" aria-label="الصحيح">
+   <button class="btn sm" type="submit">أضف إلى السجلّ</button></form>`}
+
+/* ---------- render: practice ---------- */
+function renderPractice(){
+  const L=P.lang, due=dueList(L);
+  if(!P.card||P.card.lang!==(L==="mine"?P.card.lang:L)||!due.find(c=>c.id===P.card.id)){P.card=due[0]||null;P.revealed=false}
+  const c=P.card;
+  const boxes=[1,2,3,4,5].map(b=>deckOf(L).filter(x=>cardState(x.id).box===b).length);
+  const cl=c?c.lang:(L==="fr"?"fr":"en");
+  let cardHTML;
+  if(!deckOf(L).length)cardHTML=`<div class="fcard"><p class="muted">لا بطاقات هنا بعد. أضف أول بطاقة من النموذج أدناه: جملة سمعتها في مقطع أو محادثة.</p></div>`;
+  else if(!c)cardHTML=`<div class="fcard"><h2>لا بطاقات مستحقّة اليوم</h2><p class="muted">أحسنت. البطاقات تعود حسب جدول التكرار المتباعد: بعد 1، 3، 7، 14 ثم 30 يوماً.</p></div>`;
+  else{
+    const fl2ar=P.mode==="fl2ar";
+    const q=fl2ar?`<p class="q lat" lang="${c.lang}">${esc(c.front)}</p>`:`<p class="q">${esc(c.back)}</p>`;
+    const a=fl2ar?`<p class="a">${esc(c.back)}</p>`:`<p class="a lat" lang="${c.lang}">${esc(c.front)}</p>`;
+    cardHTML=`<div class="fcard ${c.lang}">
+      <span class="eyebrow">${cardState(c.id).box===0?"بطاقة جديدة":"الصندوق "+cardState(c.id).box} · ${due.length} متبقّية</span>
+      ${q}${P.revealed?a:""}
+      <div class="row" style="justify-content:center">
+        ${(fl2ar||P.revealed)?`<button class="btn sm" data-act="say">🔊 استمع</button>`:""}
+        ${P.revealed?"":`<button class="btn sm primary" data-act="reveal">${fl2ar?"اكشف المعنى":"قلتها؟ اكشف"}</button>`}
+      </div>
+      ${P.revealed?`<div class="row" style="justify-content:center;width:100%"><button class="btn" data-act="grade" data-g="0" style="flex:1">لم أتذكّر</button><button class="btn ${c.lang}" data-act="grade" data-g="1" style="flex:1">تذكّرت</button></div>`:""}
+    </div>`;
+  }
+  const T=TOPICS[P.lang==="fr"?"fr":"en"], tl=P.lang==="fr"?"fr":"en", ti=P.topic[tl]%T.length;
+  return `<header class="hero"><span class="eyebrow">تدريب</span><h1>بطاقات وكلام</h1></header>
+  <div class="seg" role="group" aria-label="المجموعة">
+    <button data-act="lang" data-lang="en" aria-pressed="${L==="en"}">الإنجليزية · ${dueList("en").length}</button>
+    <button data-act="lang" data-lang="fr" aria-pressed="${L==="fr"}">الفرنسية · ${dueList("fr").length}</button>
+    <button data-act="lang" data-lang="mine" aria-pressed="${L==="mine"}">بطاقاتي · ${dueList("mine").length}</button>
+  </div>
+  <div class="seg" role="group" aria-label="اتّجاه البطاقة">
+    <button data-act="mode" data-m="fl2ar" aria-pressed="${P.mode==="fl2ar"}">أجنبي ← عربي (فهم)</button>
+    <button data-act="mode" data-m="ar2fl" aria-pressed="${P.mode==="ar2fl"}">عربي ← أجنبي (كلام)</button>
+  </div>
+  ${cardHTML}
+  <section class="panel"><div class="row between"><h3>الصناديق</h3><span class="small muted num">${newCount(L)} جديدة</span></div>
+    <div class="boxes">${boxes.map((n,i)=>`<div><b>${n}</b><span class="small muted">${i+1} · ${INTERVALS[i+1]}ي</span></div>`).join("")}</div>
+    <p class="small muted">تذكّرت ← تنتقل البطاقة لصندوق أعلى وتعود بعد مدّة أطول. لم أتذكّر ← تعود للصندوق 1. اتّجاه «عربي ← أجنبي» أصعب، لكنه الأقرب للكلام الحقيقي.</p>
+  </section>
+  <section class="panel" id="speakPanel">
+    <div class="row between"><h3>موضوع للكلام</h3>${chip(tl)}</div>
+    <p class="lat" lang="${tl}" style="font-size:1.25rem">${esc(T[ti][0])}</p>
+    <p class="small muted">${esc(T[ti][1])}</p>
+    <div class="timer"><span class="clock" id="spkClock">${fmt(P.spk.left||P.spk.total)}</span>
+      <div class="seg" style="flex:1;min-width:150px">${[120,180].map(s=>`<button data-act="spkLen" data-s="${s}" aria-pressed="${P.spk.total===s}">${s/60} دقائق</button>`).join("")}</div></div>
+    <div class="row"><button class="btn ${tl}" data-act="spk">${P.spk.run?"إيقاف":P.spk.left?"استئناف":"ابدأ الكلام"}</button><button class="btn" data-act="topic">موضوع آخر</button></div>
+    <p class="small muted">تكلّم دون توقّف حتى ينتهي الوقت. سجّل نفسك بمسجّل الهاتف في نفس الوقت إن أمكن.</p>
+  </section>
+  <section class="panel"><h3>محادثة مع Claude</h3>
+    <p class="small muted">تعليمات جاهزة تحوّل Claude إلى شريك محادثة يصحّح أخطاءك كل 4 رسائل. انسخها والصقها في محادثة جديدة، ويمكنك استعمال الوضع الصوتي.</p>
+    <div class="row"><button class="btn en" data-act="copy" data-lang="en" data-box="cpP-en">تعليمات الإنجليزية</button><button class="btn fr" data-act="copy" data-lang="fr" data-box="cpP-fr">تعليمات الفرنسية</button></div>
+    <textarea class="copybox" id="cpP-en" readonly hidden>${esc(PROMPT_EN)}</textarea><textarea class="copybox" id="cpP-fr" readonly hidden>${esc(PROMPT_FR)}</textarea>
+  </section>
+  <section class="panel"><h3>أضف بطاقة</h3>
+    <form class="list" data-form="card">
+      <select id="nc-l" name="lang" aria-label="اللغة"><option value="en">الإنجليزية</option><option value="fr">الفرنسية</option></select>
+      <input type="text" id="nc-f" name="front" dir="ltr" placeholder="الجملة: Let me get back to you" aria-label="الجملة الأجنبية">
+      <input type="text" id="nc-b" name="back" placeholder="المعنى بالعربية" aria-label="المعنى">
+      <button class="btn" type="submit">أضف إلى «بطاقاتي»</button>
+    </form>
+    ${S.custom.length?`<div class="list">${S.custom.slice().reverse().slice(0,8).map(c=>`<div class="item"><div class="row between"><span class="lat" lang="${c.lang}">${esc(c.front)}</span>${chip(c.lang)}</div><span class="small muted">${esc(c.back)}</span><button class="btn sm ghost" style="align-self:flex-start" data-act="delCard" data-id="${c.id}">حذف</button></div>`).join("")}</div>`:""}
+  </section>`;
+}
+
+/* ---------- render: plan ---------- */
+function renderPlan(){
+  const di=dayIndex(todayKey()), week=Math.min(12,Math.max(1,Math.ceil(di/7))), ph=week<=4?0:week<=8?1:2;
+  return `<header class="hero"><span class="eyebrow">البرنامج</span><h1>12 أسبوعاً، 40 دقيقة يومياً</h1>
+   <p class="muted">6 أيام عمل ويوم مراجعة. 25 دقيقة للإنجليزية لأنها تحتاج بناء أساس، و15 للفرنسية لصقل الطلاقة.</p></header>
+  <section class="panel"><h2>الإنجليزية</h2>
+   ${PHASES.map((p,i)=>`<div class="phase${i===ph&&di>=1&&di<=84?" now":""}">
+     <div class="row between"><h3>الأسابيع ${p.weeks} · ${p.name}</h3>${i===ph&&di>=1&&di<=84?'<span class="chip en">الآن</span>':""}</div>
+     <table><tbody>${EN_TASKS[i].map(t=>`<tr><td>${esc(t.t)}</td><td class="num muted" style="white-space:nowrap">${t.m} د</td></tr>`).join("")}</tbody></table>
+     <p class="small"><span class="muted">الهدف:</span> ${p.goal}</p></div>`).join("")}
+  </section>
+  <section class="panel"><h2>الفرنسية</h2>
+   <div style="overflow-x:auto"><table><thead><tr><th>اليوم</th><th>النشاط</th></tr></thead><tbody>
+   ${[1,2,3,4,5,6].map(d=>`<tr><td>${DAYNAMES[d]}</td><td>${esc(FR_TASKS[FR_BY_DAY[d]].t)}</td></tr>`).join("")}
+   <tr><td>${DAYNAMES[0]}</td><td>المراجعة الأسبوعية (10 دقائق)</td></tr></tbody></table></div>
+   <p class="small"><span class="muted">الهدف:</span> تقليل التردّد أثناء الكلام، وحصر أخطائك المتكرّرة وتصحيحها واحداً واحداً.</p>
+  </section>
+  <section class="panel"><h2>ما يمكن توقّعه بصدق</h2>
+   <p>12 أسبوعاً لن تجعلك طليقاً في الإنجليزية. مع الانتظام، الهدف الواقعي هو محادثة بسيطة بثقة في مواضيع مألوفة. في الفرنسية سيكون التحسّن في الطلاقة أوضح لأنك تنطلق من مستوى عالٍ.</p>
+   <p class="muted small">الانتظام أهمّ من المدّة: 40 دقيقة يومياً أنفع من 4 ساعات مرة في الأسبوع.</p>
+  </section>
+  <section class="panel"><h2>الإعدادات</h2>
+   <label class="f">تاريخ بداية البرنامج<input type="date" id="startDate" value="${esc(S.start)}"></label>
+   <p class="small muted">اليوم هو اليوم ${di} من البرنامج. تغيير التاريخ يعيد حساب الأسابيع ولا يمسح ما أنجزته.</p>
+   <div class="row">${resetArm?`<button class="btn" data-act="resetYes" style="color:var(--en);border-color:var(--en)">نعم، امسح كل شيء</button><button class="btn ghost" data-act="resetNo">تراجع</button>`:`<button class="btn ghost" data-act="resetArm">مسح كل التقدّم</button>`}</div>
+   </section>
+  <section class="panel"><h2>نسخة احتياطية</h2>
+   <p class="small muted">بياناتك محفوظة داخل التطبيق فقط. انسخ النسخة الاحتياطية واحفظها في ملاحظاتك أو أرسلها لنفسك، ثم الصقها هنا لاسترجاعها على هاتف آخر.</p>
+   <div class="row"><button class="btn" data-act="backupCopy">انسخ النسخة الاحتياطية</button></div>
+   <textarea class="copybox" id="restoreBox" placeholder="الصق النسخة الاحتياطية هنا" aria-label="النسخة الاحتياطية"></textarea>
+   <button class="btn" data-act="restore">استرجع من النص الملصق</button>
+   <p class="sync" id="sync"></p>
+  </section>`;
+}
+
+/* ---------- render: progress ---------- */
+function renderProgress(){
+  const tt=totals(), st=streak(), tk=todayKey();
+  let grid="";
+  for(let w=0;w<12;w++){grid+=`<span class="wk">أ${w+1}</span>`;for(let d=0;d<7;d++){const k=addDays(S.start,w*7+d),f=frac(k);const cls=f===null?"":f===1?"f3":f>=.5?"f2":f>0?"f1":"";grid+=`<span class="c ${cls}${k===tk?" today":""}" title="${k}${f!==null?" · "+Math.round(f*100)+"%":""}"></span>`}}
+  const mistakes=S.mistakes.slice().reverse();
+  return `<header class="hero"><span class="eyebrow">تقدّمي</span><h1>ما أنجزته حتى الآن</h1></header>
+  <div class="stats">
+   <div class="stat"><span class="small muted">أيام متتالية</span><b>${st}</b></div>
+   <div class="stat"><span class="small muted">أيام كاملة</span><b>${tt.full}<span class="small muted"> / 84</span></b></div>
+   <div class="stat"><span class="small muted">دقائق إنجليزية</span><b style="color:var(--en)">${tt.en}</b></div>
+   <div class="stat"><span class="small muted">دقائق فرنسية</span><b style="color:var(--fr)">${tt.fr}</b></div>
+  </div>
+  <section class="panel"><div class="row between"><h3>الأسابيع الاثنا عشر</h3><span class="small muted">كل مربّع يوم</span></div>
+   <div class="grid84">${grid}</div>
+   <p class="small muted">الأخضر الداكن: يوم كامل. الفاتح: جزء من المهام. المحاط باللون البرتقالي: اليوم.</p></section>
+  <section class="panel"><div class="row between"><h3>سجلّ الأخطاء المتكرّرة</h3><span class="small muted num">${S.mistakes.length}</span></div>
+   <p class="small muted">التركيز على أخطائك أنت أنفع من مراجعة القواعد كلها. راجع هذا السجلّ قبل كل محادثة.</p>
+   ${mistakeForm("fr","m-prog")}
+   ${mistakes.length?`<div class="list">${mistakes.map(m=>`<div class="item"><div class="row between">${chip(m.lang)}<span class="small muted num">${esc(m.date)}</span></div><span class="lat wrong">${esc(m.wrong)}</span><span class="lat">${esc(m.right)}</span><button class="btn sm ghost" style="align-self:flex-start" data-act="delMistake" data-id="${m.id}">حذف</button></div>`).join("")}</div>`:`<p class="muted small">لا أخطاء مسجّلة بعد. أوّل خطأ تلاحظه في تسجيل أو محادثة، دوّنه هنا.</p>`}
+  </section>
+  <section class="panel"><h3>المراجعات الأسبوعية</h3>
+   ${S.reviews.length?`<div class="list">${S.reviews.slice().sort((a,b)=>b.week-a.week).map(r=>`<div class="item"><b>الأسبوع ${r.week}</b>${r.learned?`<p><span class="muted small">تعلّمت: </span>${esc(r.learned)}</p>`:""}${r.mistake?`<p><span class="muted small">الخطأ المتكرّر: </span>${esc(r.mistake)}</p>`:""}${r.focus?`<p><span class="muted small">التركيز القادم: </span>${esc(r.focus)}</p>`:""}</div>`).join("")}</div>`:`<p class="muted small">تظهر هنا مراجعاتك كل أحد.</p>`}
+  </section>`;
+}
+
+/* ---------- render root ---------- */
+function render(){
+  const app=$("#app");
+  app.innerHTML=view==="practice"?renderPractice():view==="plan"?renderPlan():view==="progress"?renderProgress():renderToday();
+  document.querySelectorAll("#tabs a").forEach(a=>{if(a.dataset.v===view)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  paintSync();
+}
+function route(){const h=location.hash.replace("#","");view=["today","practice","plan","progress"].includes(h)?h:"today";render();window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);
+
+/* ---------- timers ---------- */
+async function lockScreen(on){if(window.Android){Android.keepAwake(!!on);return}try{if(on&&!wake&&navigator.wakeLock)wake=await navigator.wakeLock.request("screen");if(!on&&wake){await wake.release();wake=null}}catch(e){}}
+function buzz(){if(window.Android){Android.vibrate();return}try{navigator.vibrate&&navigator.vibrate([200,100,200])}catch(e){}}
+function tickTask(){
+  timer.left-=1;const c=document.getElementById("clk-"+timer.id);if(c)c.textContent=fmt(timer.left);
+  if(timer.left<=0){clearInterval(timer.t);const id=timer.id;timer={id:null,left:0,run:false,t:null};lockScreen(false);buzz();
+    const t=tasksFor(todayKey()).find(x=>x.id===id);if(t){dayRec(todayKey()).tasks[id]=t.m;save()}toast("انتهى الوقت. سُجّلت المهمّة كمنجزة");render()}
+}
+function tickSpk(){P.spk.left-=1;const c=document.getElementById("spkClock");if(c)c.textContent=fmt(P.spk.left);
+  if(P.spk.left<=0){clearInterval(P.spk.t);P.spk.run=false;P.spk.left=0;lockScreen(false);buzz();toast("انتهى الوقت. أحسنت");render()}}
+
+/* ---------- events ---------- */
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act,id=b.dataset.id,k=todayKey();
+  if(a==="toggle"){const d=dayRec(k).tasks;const t=tasksFor(k).find(x=>x.id===id);if(d[id]!=null)delete d[id];else{d[id]=t?t.m:0;if(timer.id===id){clearInterval(timer.t);timer={id:null,left:0,run:false,t:null};lockScreen(false)}}save();render();if(frac(k)===1)toast("اكتملت جلسة اليوم");return}
+  if(a==="open"){open[id]=!open[id];render();return}
+  if(a==="timer"){
+    if(timer.id&&timer.id!==id){clearInterval(timer.t);timer={id:null,left:0,run:false,t:null}}
+    if(timer.id!==id){timer={id,left:+b.dataset.m*60,run:true,t:setInterval(tickTask,1000)};lockScreen(true)}
+    else if(timer.run){clearInterval(timer.t);timer.run=false;lockScreen(false)}
+    else{timer.run=true;timer.t=setInterval(tickTask,1000);lockScreen(true)}
+    render();return}
+  if(a==="tstop"){clearInterval(timer.t);timer={id:null,left:0,run:false,t:null};lockScreen(false);render();return}
+  if(a==="goDeck"){P.lang=b.dataset.lang;P.card=null;location.hash="practice";return}
+  if(a==="goSpeak"){P.lang=b.dataset.lang;P.card=null;if(location.hash==="#practice")render();else location.hash="practice";setTimeout(()=>{const s=document.getElementById("speakPanel");s&&s.scrollIntoView({block:"start"})},60);return}
+  if(a==="copy"){copyText(b.dataset.lang==="fr"?PROMPT_FR:PROMPT_EN,b.dataset.box);return}
+  if(a==="lang"){P.lang=b.dataset.lang;P.card=null;P.revealed=false;render();return}
+  if(a==="mode"){P.mode=b.dataset.m;P.revealed=false;render();return}
+  if(a==="reveal"){P.revealed=true;render();if(P.mode==="ar2fl"&&P.card)speak(P.card.front,P.card.lang);return}
+  if(a==="say"){P.card&&speak(P.card.front,P.card.lang);return}
+  if(a==="grade"){const c=P.card;if(!c)return;const s=cardState(c.id);const box=b.dataset.g==="1"?Math.min(5,Math.max(1,s.box+1)):1;S.cards[c.id]={box,due:addDays(k,b.dataset.g==="1"?INTERVALS[box]:0)};
+    if(b.dataset.g!=="1"){/* push to end of today's queue */S.cards[c.id].due=k;S.cards[c.id].later=(S.cards[c.id].later||0)+1}
+    save();const due=dueList(P.lang).filter(x=>x.id!==c.id);P.card=b.dataset.g==="1"?(due[0]||null):(due[0]||c);P.revealed=false;render();return}
+  if(a==="topic"){const tl=P.lang==="fr"?"fr":"en";P.topic[tl]=(P.topic[tl]+1+Math.floor(Math.random()*(TOPICS[tl].length-1)))%TOPICS[tl].length;clearInterval(P.spk.t);P.spk.run=false;P.spk.left=0;render();return}
+  if(a==="spkLen"){P.spk.total=+b.dataset.s;clearInterval(P.spk.t);P.spk.run=false;P.spk.left=0;render();return}
+  if(a==="spk"){if(P.spk.run){clearInterval(P.spk.t);P.spk.run=false;lockScreen(false)}else{if(!P.spk.left)P.spk.left=P.spk.total;P.spk.run=true;P.spk.t=setInterval(tickSpk,1000);lockScreen(true)}render();return}
+  if(a==="delCard"){S.custom=S.custom.filter(c=>c.id!==id);delete S.cards[id];save();render();return}
+  if(a==="delMistake"){S.mistakes=S.mistakes.filter(m=>m.id!==id);save();render();return}
+  if(a==="backupCopy"){copyText(JSON.stringify(S),"restoreBox");return}
+  if(a==="restore"){const t=(document.getElementById("restoreBox").value||"").trim();try{const o=JSON.parse(t);if(!o||!o.start||!o.days)throw 0;S=Object.assign(fresh(),o);save();toast("استُرجعت بياناتك");render()}catch(e){toast("النص الملصق ليس نسخة احتياطية صالحة")}return}
+  if(a==="resetArm"){resetArm=true;render();return}
+  if(a==="resetNo"){resetArm=false;render();return}
+  if(a==="resetYes"){const st=S.start;S=fresh();S.start=st;resetArm=false;save();toast("مُسح التقدّم");render();return}
+});
+document.addEventListener("submit",e=>{
+  const f=e.target.closest("form[data-form]");if(!f)return;e.preventDefault();const fd=new FormData(f),type=f.dataset.form;
+  if(type==="mistake"){const w=(fd.get("wrong")||"").trim(),r=(fd.get("right")||"").trim();if(!w||!r){toast("اكتب الخطأ والصحيح معاً");return}
+    S.mistakes.push({id:"m"+Date.now(),lang:fd.get("lang"),wrong:w,right:r,date:todayKey()});save();toast("أُضيف إلى سجلّ الأخطاء");render();return}
+  if(type==="card"){const fr=(fd.get("front")||"").trim(),bk=(fd.get("back")||"").trim();if(!fr||!bk){toast("اكتب الجملة ومعناها");return}
+    S.custom.push({id:"c"+Date.now(),lang:fd.get("lang"),front:fr,back:bk});save();toast("أُضيفت إلى «بطاقاتي»");render();return}
+  if(type==="review"){const w=+f.dataset.week;S.reviews=S.reviews.filter(x=>x.week!==w);S.reviews.push({week:w,learned:fd.get("learned").trim(),mistake:fd.get("mistake").trim(),focus:fd.get("focus").trim(),date:todayKey()});
+    dayRec(todayKey()).tasks.review=10;save();toast("حُفظت المراجعة");render();return}
+});
+document.addEventListener("change",e=>{if(e.target.id==="startDate"&&e.target.value){S.start=e.target.value;save();toast("تغيّر تاريخ البداية");render()}});
+
+route();
+</script>
+
+</body></html>

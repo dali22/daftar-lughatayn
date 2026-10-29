@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper">#F3F4F7</color>
+    <color name="paper_night">#11141B</color>
+    <color name="icon_bg">#1A2030</color>
+    <color name="en">#E07A3F</color>
+    <color name="fr">#8A99F2</color>
+</resources>
